@@ -4,25 +4,25 @@ public class number {
 
 	public static void main(String[] args) {
 		
-		System.out.print("10°³ÀÇ ·£´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä(1~50±îÁö): ");
-		Scanner s = new Scanner(System.in);
-		int num = s.nextInt();
-		int a,b = 0;
+		System.out.print("10ê°œì˜ ëœë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš”(1~50ê¹Œì§€): ");
+		Scanner s = new Scanner(System.in); //ìŠ¤ìºë„ˆ
+		int num = s.nextInt(); 
+		int a,b = 0; //ë³€ìˆ˜ ìƒì„±
 		
 		Random random = new Random();
 		for (int i=0;i<=9;i++) {
-			a = random.nextInt(50)+1;
-			System.out.print(a+" ");
+			a = random.nextInt(50)+1; //ëœë¤í•¨ìˆ˜
+			System.out.print(a+" "); //ëœë¤ìˆ«ì ìƒì„±
 			if (a==num) {
 				b=1;
 			}
 		}
 		
 		if(b==1){
-			System.out.println("\n´çÃ·! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ÀÖ½À´Ï´Ù.");
+			System.out.println("\në‹¹ì²¨! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ìˆìŠµë‹ˆë‹¤."); //ê²°ê³¼ ì¶œë ¥
 		}
 		else {
-			System.out.println("\n¾Æ½±±º¿ä! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("\nì•„ì‰½êµ°ìš”! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ì—†ìŠµë‹ˆë‹¤."); //ê²°ê³¼ ì¶œë ¥
 		}
 		
 
